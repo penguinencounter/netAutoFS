@@ -93,6 +93,8 @@ def main():
     local, net = get_local_ip()
     print(f'i am {local}')
     up_names = ping_spam(net)
+    lsd = [int(i.split('.')[3]) for i in up_names]
+    print(f'range: {min(lsd)} - {max(lsd)}')
 
 
 if __name__ == '__main__':
