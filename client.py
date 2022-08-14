@@ -10,7 +10,7 @@ from ipaddress import IPv4Network
 from typing import List
 
 IPv4_CIDR = 24  # should work on pretty much all nets
-LOGGER = logging.getLogger('netAutoFSClient')
+LOGGER = logging.getLogger('netAutoFS-Client')
 logging.basicConfig(level=logging.INFO)
 LOGGER.setLevel(logging.INFO)
 
