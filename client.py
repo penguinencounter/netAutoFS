@@ -58,7 +58,7 @@ def ping_spam(net: IPv4Network, thread_count: int = 32) -> List[str]:
     threads = []
 
     def ping(target: str):
-        if 'nix' in sys.platform:
+        if 'linux' in sys.platform:
             cmd = f'ping {NIX_COUNT.format(1)} {target}'
         elif 'win' in sys.platform:
             cmd = f'ping {WIN_COUNT.format(1)} {target}'
