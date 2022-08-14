@@ -94,5 +94,6 @@ def main():
     print(f'i am {local}')
     up_names = ping_spam(net)
 
+
 if __name__ == '__main__':
     main()
