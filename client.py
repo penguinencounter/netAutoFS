@@ -145,6 +145,7 @@ def main():
     print(f'i am {local}')
     up_names = ping_spam(net)
     up_names_and_uas = check_for_servers(up_names)
+    print(up_names_and_uas)
 
 
 if __name__ == '__main__':

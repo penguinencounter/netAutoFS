@@ -12,3 +12,8 @@ def get_local_random_id(byte_count: int = 8) -> str:
             gen = '{:0>8x}'.format(random.randint(0, max_int))
             f.write(gen)
             return gen
+
+
+def read_server_connection_config() -> dict:
+    with open('server.conf', 'r') as f:
+        return eval(f.read())

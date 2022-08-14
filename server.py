@@ -1,9 +1,9 @@
 from flask import Flask
 import socket
-import identification
+import config
 
 app = Flask(__name__)
-localid = identification.get_local_random_id(32)
+localid = config.get_local_random_id(32)
 DEFAULT_PROTOCOL_PORT = 7007
 
 
