@@ -66,7 +66,7 @@ def ping_spam(net: IPv4Network, thread_count: int = 32) -> List[str]:
             raise NotImplementedError(f'Platform {sys.platform} not supported. Sorry :(')
         LOGGER.debug(f'Pinging {target}...')
         try:
-            out = subprocess.check_output(shlex.split(cmd), shell=True)
+            out = subprocess.check_output(cmd, shell=True)
         except subprocess.CalledProcessError:
             return
         decoded = out.decode('utf-8')
